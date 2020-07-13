@@ -1,0 +1,28 @@
+$NavHeight: 65px;
+/* 主色调 */
+$maincolor: #00b6a8;
+/* 辅助色 */
+$sencondcolor: #00b6a850;
+/* 字体 */
+$titlesize: 20px;
+/* 遮罩层 */
+$mainbgF20: #ffffff20;
+
+//滚动条的宽度
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+//滚动条的滑块
+::-webkit-scrollbar-thumb {
+  background-color: $maincolor;
+  border-radius: 10px;
+}
+
+@mixin webkit($type, $value) {
+  -webkit-#{$type}: $value;
+  -moz-#{$type}: $value;
+  -ms-#{$type}: $value;
+  -o-#{$type}: $value;
+  #{$type}: $value;
+}

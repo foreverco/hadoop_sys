@@ -1,0 +1,8 @@
+@import "./nomalize.scss";
+@import "./config.scss";
+@import "./elementui.scss";
+body {
+  background: url("~@/assets/images/bg1.png") no-repeat;
+  background-size: 100% 100%;
+  // background: green;
+}
